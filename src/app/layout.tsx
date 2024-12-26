@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="manifest" href={getImagePath('/favicon/site.webmanifest')} />
         <link rel="icon" href={getImagePath('/favicon/favicon.ico')} />
       </head>
       <body className={inter.className}>
