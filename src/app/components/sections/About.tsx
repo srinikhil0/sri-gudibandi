@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { getImagePath } from '@/utils/imagePath'
 
 export default function About() {
   return (
@@ -53,7 +54,7 @@ export default function About() {
           <div className="relative order-1 md:order-2">
             <div className="aspect-square relative rounded-2xl overflow-hidden border-2 border-foreground/10">
               <Image
-                src="/profile.jpg"
+                src={getImagePath('/profile.jpg')}
                 alt="Sri Gudibandi"
                 fill
                 className="object-cover"

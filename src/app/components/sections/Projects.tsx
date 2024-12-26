@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { getImagePath } from '@/utils/imagePath'
 
 interface Project {
   title: string
@@ -19,7 +20,7 @@ const projects: Project[] = [
     description: "A web application designed to estimate dog breeds from user-uploaded photos. Uses machine learning to approximate breed makeup based on physical characteristics, providing a quick alternative to genetic tests.",
     tech: ["Angular", "Machine Learning", "Firebase", "Web Development"],
     url: "https://pawsitiveid-10f0e.web.app/home",
-    image: "/projects/pawsitive_id.webp",
+    image: getImagePath('/projects/pawsitive_id.webp'),
     github: "https://github.com/srinikhil0/pawsitive_id_Angular",
     categories: ["Full Stack", "Machine Learning", "Web Development"]
   },
