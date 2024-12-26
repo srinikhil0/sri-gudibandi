@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/sri' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/sri' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/sri-gudibandi' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/sri-gudibandi' : '',
   trailingSlash: true,
 };
 
