@@ -29,7 +29,7 @@ const projects: Project[] = [
     description: "A research study analyzing algorithm accuracy for Parkinson's disease prediction using vocal data. XGBoost achieved 96% accuracy in classification, demonstrating superior performance.",
     tech: ["Python", "Machine Learning", "Research", "Healthcare"],
     url: "",
-    image: "/projects/parkinson.webp",
+    image: getImagePath('/projects/parkinson.webp'),
     github: "https://github.com/srinikhil0/Vocal-based-parkinson-disease-detection-using-machine-learning-algorithms",
     categories: ["Machine Learning", "Research", "Healthcare"]
   },
@@ -38,7 +38,7 @@ const projects: Project[] = [
     description: "An innovative project designed to revolutionize video surveillance through advanced motion detection and encryption technology. Enhances privacy by selectively encrypting areas within video frames where motion is detected.",
     tech: ["Python", "Machine Learning", "Encryption", "OpenCV"],
     url: "",
-    image: "/projects/piviwatch.png",
+    image: getImagePath('/projects/piviwatch.png'),
     github: "https://github.com/srinikhil0/PiviWatch",
     categories: ["Machine Learning", "Computer Vision", "Cybersecurity"]
   }

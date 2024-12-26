@@ -4,6 +4,7 @@ import './globals.css'
 import { ThemeProvider } from '@/app/components/providers/ThemeProvider'
 import Footer from './components/sections/Footer'
 import ScrollToTop from './components/ui/ScrollToTop'
+import { getImagePath } from '@/utils/imagePath'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,18 +14,18 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon/favicon-32x32.png',
+        url: getImagePath('/favicon/favicon-32x32.png'),
         sizes: '32x32',
         type: 'image/png',
       },
       {
-        url: '/favicon/favicon-16x16.png',
+        url: getImagePath('/favicon/favicon-16x16.png'),
         sizes: '16x16',
         type: 'image/png',
       },
     ],
     apple: {
-      url: '/favicon/apple-touch-icon.png',
+      url: getImagePath('/favicon/apple-touch-icon.png'),
       sizes: '180x180',
       type: 'image/png',
     },
@@ -40,7 +41,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="icon" href={getImagePath('/favicon/favicon.ico')} />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
