@@ -3,30 +3,30 @@ export default function Experience() {
     {
         title: "Security and Product Development Engineer Intern",
         company: "Stiisk LLC, MA",
-        period: "08/2024 - 12/2024",
-        description: "Led development of web application using HTML5, CSS3, JavaScript, and Three.js by integrating with firebase and Google Cloud Platform and building AI Agents to assist the user in creating 3D models",
-        technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents"]
+        period: "01/2024 - Present",
+        description: "Leading development of web application using HTML5, CSS3, JavaScript, and Three.js. Integrating with Firebase and Google Cloud Platform, and building AI Agents to assist users in creating 3D models. Implementing secure authentication and authorization mechanisms.",
+        technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents", "Security"]
     },
     {
         title: "Teaching Assistant",
         company: "Boston University, MA",
-        period: ["09/2023 - 12/2023", " | 09/2024 - 12/2024"],
-        description: "Assisted in teaching courses in Software quality, Testing and Security management by guiding 24 student teams in two semester-long group projects to design and develop real-world software systems using various software engineering techniques taught in the class.",
-        technologies: ["Software Quality", "Testing", "Security Management"]
+        period: ["09/2023 - 12/2023 | ", "09/2024 - 12/2024"],
+        description: "Assisting in teaching Software Engineering courses, focusing on Software Quality, Testing, and Security Management. Guiding 24 student teams in semester-long projects to develop real-world software systems using agile methodologies.",
+        technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
     },
     {
       title: "Software Engineer",
       company: "Capgemini, India",
       period: "01/2021 - 07/2022",
-      description: "Managed production servers, overseeing complex data flows from upstream systems through Informatica workflows, and upheld data integrity by proactively managing job executions and preventing data corruption.",
-      technologies: ["Python", "MySQL", "Bash Scripting", "Informatica", "Data Warehousing"]
+      description: "Led development of data pipelines and ETL processes using Python and Informatica PowerCenter. Automated server monitoring and maintenance tasks, reducing manual intervention by 40%. Implemented data quality checks and validation procedures.",
+      technologies: ["Python", "MySQL", "Shell Scripting", "Informatica", "ETL", "Data Warehousing"]
     },
     {
         title: "Core Team Member",
         company: "Global Child Prodigy Awards, India",
         period: "01/2017 - 12/2020",
-        description: "Managed production servers, overseeing complex data flows from upstream systems through Informatica workflows, and upheld data integrity by proactively managing job executions and preventing data corruption.",
-        technologies: ["React", "Node.js", "AWS", "TypeScript"]
+        description: "Developed and maintained the organization's web platform using React and Node.js. Implemented secure user authentication and data management systems. Collaborated with cross-functional teams to enhance platform features and user experience.",
+        technologies: ["React", "Node.js", "Firebase", "TypeScript"]
       },
     // Add more experiences as needed
   ]

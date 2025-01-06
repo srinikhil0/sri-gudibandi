@@ -1,4 +1,5 @@
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { getImagePath } from '@/utils/imagePath';
 
 export default function Hero() {
   const socialLinks = [
@@ -66,7 +67,7 @@ export default function Hero() {
               View Projects
             </a>
             <a 
-              href="/sri/resume.pdf" 
+              href={getImagePath('/Sri_Nikhil_Reddy_Gudibandi_Resume.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-foreground text-background px-6 py-3 rounded-lg hover:scale-105 hover:shadow-lg transition-all flex items-center gap-2"
