@@ -29,7 +29,7 @@ const projects: Project[] = [
     description: "An interactive periodic table application powered by AI, developed in collaboration with MXEnergy Labs and Shizuoka University, Japan. Features real-time chemical data integration with RSC API, AI-powered insights, and 3D visualizations of chemical elements.",
     tech: ["Next.js", "Three.js", "Google AI", "Firebase", "TypeScript"],
     url: "https://periodictableai.web.app/",
-    image: getImagePath('/projects/periodicTableAI.webp'),
+    image: getImagePath('/projects/periodicTableAi.webp'),
     github: "https://github.com/srinikhil0/PeriodicTableAIAgent",
     categories: ["Full Stack", "Machine Learning", "Web Development", "Research"]
   },
