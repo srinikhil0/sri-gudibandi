@@ -16,6 +16,24 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "AI Calendar Scheduler",
+    description: "An intelligent calendar management system powered by Google Gemini AI that helps users schedule events, create study plans, and set reminders through natural language processing. Features include Google Calendar integration, secure Firebase authentication, interactive chat interface, and smart intent recognition for different types of events.",
+    tech: ["Next.js", "FastAPI", "Google Gemini AI", "Firebase", "TypeScript", "Python"],
+    url: "",
+    image: getImagePath('/projects/AICalendarAssistant.webp'),
+    github: "https://github.com/Future-Website/future-website/tree/main?tab=readme-ov-file",
+    categories: ["Full Stack", "Machine Learning", "Web Development"]
+  },
+  {
+    title: "Periodic Table AI",
+    description: "An interactive periodic table application powered by AI, developed in collaboration with MXEnergy Labs and Shizuoka University, Japan. Features real-time chemical data integration with RSC API, AI-powered insights, and 3D visualizations of chemical elements.",
+    tech: ["Next.js", "Three.js", "Google AI", "Firebase", "TypeScript"],
+    url: "https://periodictableai.web.app/",
+    image: getImagePath('/projects/periodicTableAI.webp'),
+    github: "https://github.com/srinikhil0/PeriodicTableAIAgent",
+    categories: ["Full Stack", "Machine Learning", "Web Development", "Research"]
+  },
+  {
     title: "PawsitiveId",
     description: "A web application designed to estimate dog breeds from user-uploaded photos. Uses machine learning to approximate breed makeup based on physical characteristics, providing a quick alternative to genetic tests.",
     tech: ["Angular", "Machine Learning", "Firebase", "Web Development"],
@@ -45,7 +63,7 @@ const projects: Project[] = [
 ]
 
 const PROJECTS_PER_PAGE = 6
-const CATEGORIES = ["All", "Cybersecurity", "Machine Learning", "Full Stack", "Research", "Healthcare", "Web Development"]
+const CATEGORIES = ["All", "Cybersecurity", "Machine Learning", "Full Stack", "Web Development"]
 
 export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1)
@@ -107,7 +125,7 @@ export default function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-foreground/60 mb-4 line-clamp-2">
+                <p className="text-foreground/60 mb-4 text-sm">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">

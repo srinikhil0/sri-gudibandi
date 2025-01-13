@@ -3,7 +3,7 @@ export default function Experience() {
     {
         title: "Security and Product Development Engineer Intern",
         company: "Stiisk LLC, MA",
-        period: "01/2024 - Present",
+        period: "08/2024 - 12/2024",
         description: "Leading development of web application using HTML5, CSS3, JavaScript, and Three.js. Integrating with Firebase and Google Cloud Platform, and building AI Agents to assist users in creating 3D models. Implementing secure authentication and authorization mechanisms.",
         technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents", "Security"]
     },
