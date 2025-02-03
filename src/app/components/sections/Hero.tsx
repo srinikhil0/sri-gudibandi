@@ -30,7 +30,7 @@ export default function Hero() {
             Hi, I&apos;m Sri Gudibandi
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-foreground/80">
-            Software Engineer with 6 years of experience
+            Full Stack Developer and Security Engineer
           </p>
           <p className="text-lg md:text-xl mb-8 text-foreground/60 max-w-3xl mx-auto">
             Specializing in secure software development, scalable web applications, and automation. 

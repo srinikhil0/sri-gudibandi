@@ -64,9 +64,15 @@ export default function Footer() {
                     Skills
                   </a>
                 </li>
+                <li>
+                  <a href="#certifications" className="text-foreground/70 hover:text-foreground transition-colors">
+                    Certifications
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
+
         </div>
         <div className="mt-12 pt-6 border-t border-foreground/10 text-center text-foreground/60">
           <p>&copy; {currentYear} Sri Gudibandi. All rights reserved.</p>

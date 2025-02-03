@@ -2,8 +2,12 @@ import { IconType } from 'react-icons'
 import { 
   SiPython, SiCplusplus, SiMysql, SiJavascript, SiHtml5, 
   SiCss3, SiReact, SiNodedotjs, SiExpress, SiFirebase,
-  SiSplunk, SiGit, SiGithubactions, SiPostgresql,
-  SiGooglecloud, SiRedis, SiGnubash, SiLinux, SiKalilinux
+  SiGit, SiGithubactions, SiPostgresql,
+  SiGooglecloud, SiRedis, SiGnubash, SiLinux, SiKalilinux,
+  SiAngular,
+  SiSonar,
+  SiZap,
+  SiWireshark
 } from 'react-icons/si'
 
 interface SkillCategory {
@@ -34,7 +38,7 @@ export default function Skills() {
         { name: "React", icon: SiReact, color: "text-cyan-400" },
         { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
         { name: "Express.js", icon: SiExpress, color: "text-gray-500" },
-        { name: "Firebase", icon: SiFirebase, color: "text-yellow-500" },
+        { name: "Angular", icon: SiAngular, color: "text-blue-500" },
       ]
     },
     {
@@ -43,6 +47,7 @@ export default function Skills() {
         { name: "MySQL", icon: SiMysql, color: "text-blue-500" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
         { name: "Redis", icon: SiRedis, color: "text-red-600" },
+        { name: "Firebase", icon: SiFirebase, color: "text-yellow-500" },
       ]
     },
     {
@@ -50,10 +55,13 @@ export default function Skills() {
       skills: [
         { name: "Linux/Unix", icon: SiLinux, color: "text-yellow-500" },
         { name: "Kali Linux", icon: SiKalilinux, color: "text-blue-600" },
-        { name: "Splunk", icon: SiSplunk, color: "text-green-500" },
         { name: "Git", icon: SiGit, color: "text-orange-600" },
         { name: "GitHub Actions", icon: SiGithubactions, color: "text-blue-500" },
-        { name: "Google Cloud", icon: SiGooglecloud, color: "text-blue-400" },
+        { name: "Google Cloud Platform", icon: SiGooglecloud, color: "text-blue-400" },
+        { name: "SonarQube", icon: SiSonar, color: "text-blue-500" },
+        { name: "OWASP ZAP", icon: SiZap, color: "text-blue-500" },
+        { name: "Wireshark", icon: SiWireshark, color: "text-blue-500" },
+        
       ]
     }
   ]

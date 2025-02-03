@@ -17,11 +17,14 @@ export default function Navbar() {
           
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#about" className="hover:text-gray-400 transition">About</Link>
+            <Link href="#skills" className="hover:text-gray-400 transition">Skills</Link>
+            <Link href="#certifications" className="hover:text-gray-400 transition">Certifications</Link>
             <Link href="#experience" className="hover:text-gray-400 transition">Experience</Link>
             <Link href="#projects" className="hover:text-gray-400 transition">Projects</Link>
             <Link href="#education" className="hover:text-gray-400 transition">Education</Link>
             <Link href="#contact" className="hover:text-gray-400 transition">Contact</Link>
             <ThemeToggle />
+
           </div>
 
           <button 

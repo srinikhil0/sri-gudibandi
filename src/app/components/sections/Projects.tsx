@@ -16,10 +16,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AI Calendar Scheduler",
+    title: "Time Bridge AI",
     description: "An intelligent calendar management system powered by Google Gemini AI that helps users schedule events, create study plans, and set reminders through natural language processing. Features include Google Calendar integration, secure Firebase authentication, interactive chat interface, and smart intent recognition for different types of events.",
     tech: ["Next.js", "FastAPI", "Google Gemini AI", "Firebase", "TypeScript", "Python"],
-    url: "",
+    url: "https://timebridgeai.web.app/",
     image: getImagePath('/projects/AICalendarAssistant.webp'),
     github: "https://github.com/Future-Website/future-website/tree/main?tab=readme-ov-file",
     categories: ["Full Stack", "Machine Learning", "Web Development"]

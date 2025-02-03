@@ -1,9 +1,17 @@
 export default function Experience() {
   const experiences = [
     {
+      title: "Course Facilitator",
+      company: "Boston University, MA",
+      period: "01/2025 - Present",
+      description: "Facilitating the Software Engineering course, focusing on Software Quality, Testing, and Security Management. Guiding 2 student teams in online course format for term projects to develop real-world software projects using agile methodologies.",
+      technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
+    },
+    {
         title: "Security and Product Development Engineer Intern",
         company: "Stiisk LLC, MA",
-        period: "08/2024 - 12/2024",
+        period: "07/2024 - 12/2024",
+
         description: "Leading development of web application using HTML5, CSS3, JavaScript, and Three.js. Integrating with Firebase and Google Cloud Platform, and building AI Agents to assist users in creating 3D models. Implementing secure authentication and authorization mechanisms.",
         technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents", "Security"]
     },
@@ -11,7 +19,7 @@ export default function Experience() {
         title: "Teaching Assistant",
         company: "Boston University, MA",
         period: ["09/2023 - 12/2023 | ", "09/2024 - 12/2024"],
-        description: "Assisting in teaching Software Engineering courses, focusing on Software Quality, Testing, and Security Management. Guiding 24 student teams in semester-long projects to develop real-world software systems using agile methodologies.",
+        description: "Assisting in teaching Software Engineering courses, focusing on Software Quality, Testing, and Security Management. Guiding 24 student teams in semester-long projects to develop real-world software projects using agile methodologies.",
         technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
     },
     {

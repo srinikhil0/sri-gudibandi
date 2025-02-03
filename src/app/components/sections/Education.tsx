@@ -5,14 +5,14 @@ export default function Education() {
       school: "Boston University, MA",
       period: "01/2023 - 05/2024",
       description: "Specialized in software development, security analysis and management",
-      achievements: ["GPA: 3.54/4.0", "Teaching Assistant"]
+      achievements: ["GPA: 3.54/4.0", "Teaching Assistant", "Course Facilitator"]
     },
     {
         degree: "Bachelor of Engineering in Computer Science and Engineering",
         school: "Sathyabama Institute of Science and Technology, India",
         period: "07/2016 - 05/2020",
         description: "Completed project and paper on Vocal based Parkinson's disease detection using machine learning Models",
-        achievements: ["GPA: 7.59/10", "Cognizant Student Club Leader"]
+        achievements: ["GPA: 7.59/10", "Cognizant Student Club Leader", "NSS Volunteer"]
       },
     // Add more education entries as needed
   ]
