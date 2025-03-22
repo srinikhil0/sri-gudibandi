@@ -58,6 +58,7 @@ const translations = {
     'experience.company': 'Company',
     'experience.period': 'Period',
     'experience.technologies': 'Technologies Used',
+    'experience.job1.description': 'Job description in English',
 
     // Projects Section
     'projects.liveDemo': 'Live Demo',
@@ -157,6 +158,7 @@ const translations = {
     'experience.company': '会社',
     'experience.period': '期間',
     'experience.technologies': '使用技術',
+    'experience.job1.description': '仕事の説明（日本語）',
 
     // Projects Section
     'projects.liveDemo': 'ライブデモ',
