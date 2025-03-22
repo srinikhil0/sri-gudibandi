@@ -3,7 +3,7 @@
 import { useLanguage } from '@/app/components/providers/LanguageProvider'
 
 interface Experience {
-  title: string;
+  titleKey: string;
   company: string;
   period: string;
   descriptionKey: string;
@@ -15,40 +15,40 @@ export default function Experience() {
 
   const experiences: Experience[] = [
     {
-      title: "Course Facilitator",
+      titleKey: "experience.job1.title",
       company: "Boston University, MA",
-      period: "01/2025 - Present",
+      period: "01/2025 - 03/2025",
       descriptionKey: "experience.job1.description",
       technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
     },
     {
-        title: "Security and Product Development Engineer Intern",
-        company: "Stiisk LLC, MA",
-        period: "07/2024 - 12/2024",
-        descriptionKey: "experience.job2.description",
-        technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents", "Security"]
+      titleKey: "experience.job2.title",
+      company: "Stiisk LLC, MA",
+      period: "07/2024 - 12/2024",
+      descriptionKey: "experience.job2.description",
+      technologies: ["Three.js", "Firebase", "Google Cloud Platform", "AI Agents", "Security"]
     },
     {
-        title: "Teaching Assistant",
-        company: "Boston University, MA",
-        period: "09/2023 - 12/2023 | 09/2024 - 12/2024",
-        descriptionKey: "experience.job3.description",
-        technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
+      titleKey: "experience.job3.title",
+      company: "Boston University, MA",
+      period: "09/2023 - 12/2023 | 09/2024 - 12/2024",
+      descriptionKey: "experience.job3.description",
+      technologies: ["Software Engineering", "Testing", "Security Management", "Agile"]
     },
     {
-      title: "Software Engineer",
+      titleKey: "experience.job4.title",
       company: "Capgemini, India",
       period: "01/2021 - 07/2022",
       descriptionKey: "experience.job4.description",
       technologies: ["Python", "MySQL", "Shell Scripting", "Informatica", "ETL", "Data Warehousing"]
     },
     {
-        title: "Core Team Member",
-        company: "Global Child Prodigy Awards, India",
-        period: "01/2017 - 12/2020",
-        descriptionKey: "experience.job5.description",
-        technologies: ["React", "Node.js", "Firebase", "TypeScript"]
-      },
+      titleKey: "experience.job5.title",
+      company: "Global Child Prodigy Awards, India",
+      period: "01/2017 - 12/2020",
+      descriptionKey: "experience.job5.description",
+      technologies: ["React", "Node.js", "Firebase", "TypeScript"]
+    },
     // Add more experiences as needed
   ]
 
@@ -62,7 +62,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="border-l-2 border-foreground/20 pl-6 relative">
               <div className="absolute w-3 h-3 bg-foreground rounded-full -left-[7px] top-2" />
-              <h3 className="text-xl font-semibold">{exp.title}</h3>
+              <h3 className="text-xl font-semibold">{t(exp.titleKey)}</h3>
               <p className="text-foreground/60 mb-2">
                 {exp.company} • {exp.period.includes('Present') ? t('experience.present') : exp.period}
               </p>

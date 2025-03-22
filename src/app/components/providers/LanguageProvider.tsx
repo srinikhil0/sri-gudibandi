@@ -58,7 +58,20 @@ const translations = {
     'experience.company': 'Company',
     'experience.period': 'Period',
     'experience.technologies': 'Technologies Used',
-    'experience.job1.description': 'Job description in English',
+    'experience.job1.title': 'Course Facilitator',
+    'experience.job1.description': 'Leading course sessions and providing guidance to students in software engineering principles, testing methodologies, and security management practices. Facilitating hands-on workshops and supporting student learning in an agile environment.',
+    
+    'experience.job2.title': 'Security and Product Development Engineer Intern',
+    'experience.job2.description': 'Developing secure web applications using Three.js and Firebase, implementing AI-powered features, and conducting security assessments. Working with Google Cloud Platform to build scalable solutions.',
+    
+    'experience.job3.title': 'Teaching Assistant',
+    'experience.job3.description': 'Assisting professors in conducting software engineering courses, grading assignments, and mentoring students. Supporting practical sessions in testing methodologies and security concepts.',
+    
+    'experience.job4.title': 'Software Engineer',
+    'experience.job4.description': 'Developed and maintained ETL pipelines using Python and Informatica. Implemented data warehousing solutions and automated processes using shell scripting. Managed MySQL databases for efficient data processing.',
+    
+    'experience.job5.title': 'Core Team Member',
+    'experience.job5.description': 'Led the development of web applications using React and Node.js. Implemented Firebase authentication and real-time database features. Developed TypeScript-based solutions for improved code quality.',
 
     // Projects Section
     'projects.liveDemo': 'Live Demo',
@@ -158,7 +171,20 @@ const translations = {
     'experience.company': '会社',
     'experience.period': '期間',
     'experience.technologies': '使用技術',
-    'experience.job1.description': '仕事の説明（日本語）',
+    'experience.job1.title': 'コース・ファシリテーター',
+    'experience.job1.description': 'ソフトウェアエンジニアリング、テスト方法論、セキュリティ管理の実践において、学生の指導とサポートを行っています。アジャイル環境での実践的なワークショップを実施し、学習支援を提供しています。',
+    
+    'experience.job2.title': 'セキュリティ・プロダクト開発エンジニアインターン',
+    'experience.job2.description': 'Three.jsとFirebaseを使用したセキュアなWebアプリケーションの開発、AI機能の実装、セキュリティ評価を担当。Google Cloud Platformを活用してスケーラブルなソリューションを構築。',
+    
+    'experience.job3.title': '教育アシスタント',
+    'experience.job3.description': 'ソフトウェアエンジニアリングコースの教授補佐、課題の採点、学生指導を担当。テスト方法論とセキュリティ概念の実践セッションをサポート。',
+    
+    'experience.job4.title': 'ソフトウェアエンジニア',
+    'experience.job4.description': 'PythonとInformaticaを使用したETLパイプラインの開発と保守。シェルスクリプトを使用したデータウェアハウスソリューションの実装と自動化。効率的なデータ処理のためのMySQLデータベース管理。',
+    
+    'experience.job5.title': 'コアチームメンバー',
+    'experience.job5.description': 'ReactとNode.jsを使用したWebアプリケーションの開発をリード。Firebase認証とリアルタイムデータベース機能を実装。TypeScriptベースのソリューションを開発してコード品質を向上。',
 
     // Projects Section
     'projects.liveDemo': 'ライブデモ',
