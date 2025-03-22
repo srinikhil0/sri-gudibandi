@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { useLanguage } from '@/app/components/providers/LanguageProvider'
+import { getImagePath } from '@/utils/imagePath'
 
 interface Project {
   title: string
@@ -22,7 +23,7 @@ const projects: Project[] = [
     description: "An intelligent calendar management system powered by Google Gemini AI that helps users schedule events, create study plans, and set reminders through natural language processing. Features include Google Calendar integration, secure Firebase authentication, interactive chat interface, and smart intent recognition for different types of events.",
     tech: ["Next.js", "FastAPI", "Google Gemini AI", "Firebase", "TypeScript", "Python"],
     url: "https://timebridgeai.web.app/",
-    image: '/projects/AICalendarAssistant.webp',
+    image: getImagePath('/projects/AICalendarAssistant.webp'),
     github: "https://github.com/srinikhil0/timebridgeai",
     categories: ["Machine Learning", "Full Stack", "Web Development"],
     titleKey: 'projects.timeBridgeAI',
@@ -33,7 +34,7 @@ const projects: Project[] = [
     description: "An interactive periodic table application powered by AI, developed in collaboration with MXEnergy Labs and Shizuoka University, Japan. Features real-time chemical data integration with RSC API, AI-powered insights, and 3D visualizations of chemical elements.",
     tech: ["Next.js", "Three.js", "Google AI", "Firebase", "TypeScript"],
     url: "https://periodictableai.web.app/",
-    image: '/projects/periodicTableAi.webp',
+    image: getImagePath('/projects/periodicTableAi.webp'),
     github: "https://github.com/srinikhil0/PeriodicTableAIAgent",
     categories: ["Full Stack", "Machine Learning", "Web Development", "Research"],
     titleKey: 'projects.periodicTableAI',
@@ -44,7 +45,7 @@ const projects: Project[] = [
     description: "A web application designed to estimate dog breeds from user-uploaded photos. Uses machine learning to approximate breed makeup based on physical characteristics, providing a quick alternative to genetic tests.",
     tech: ["Angular", "Machine Learning", "Firebase", "Web Development"],
     url: "https://pawsitiveid-10f0e.web.app/home",
-    image: '/projects/pawsitive_id.webp',
+    image: getImagePath('/projects/pawsitive_id.webp'),
     github: "https://github.com/srinikhil0/pawsitive_id_Angular",
     categories: ["Full Stack", "Machine Learning", "Web Development"],
     titleKey: 'projects.pawsitiveId',
@@ -55,7 +56,7 @@ const projects: Project[] = [
     description: "A research study analyzing algorithm accuracy for Parkinson's disease prediction using vocal data. XGBoost achieved 96% accuracy in classification, demonstrating superior performance.",
     tech: ["Python", "Machine Learning", "Research", "Healthcare"],
     url: "",
-    image: '/projects/parkinson.webp',
+    image: getImagePath('/projects/parkinson.webp'),
     github: "https://github.com/srinikhil0/Vocal-based-parkinson-disease-detection-using-machine-learning-algorithms",
     categories: ["Machine Learning", "Research", "Healthcare"],
     titleKey: 'projects.vocalBasedParkinsonsDiseaseDetection',
@@ -66,7 +67,7 @@ const projects: Project[] = [
     description: "An innovative project designed to revolutionize video surveillance through advanced motion detection and encryption technology. Enhances privacy by selectively encrypting areas within video frames where motion is detected.",
     tech: ["Python", "Machine Learning", "Encryption", "OpenCV"],
     url: "",
-    image: '/projects/piviwatch.png',
+    image: getImagePath('/projects/piviwatch.png'),
     github: "https://github.com/srinikhil0/PiviWatch",
     categories: ["Machine Learning", "Computer Vision", "Cybersecurity"],
     titleKey: 'projects.piviWatch',
@@ -82,7 +83,7 @@ const CATEGORIES = [
   { key: 'projects.filter.fullstack', value: 'Full Stack' },
   { key: 'projects.filter.web', value: 'Web Development' }
 ]
-const DEFAULT_IMAGE = '/placeholder.jpg'
+const DEFAULT_IMAGE = getImagePath('/placeholder.jpg')
 
 const ProjectImage = ({ src, alt, priority }: { src: string; alt: string; priority?: boolean }) => {
   const [imgSrc, setImgSrc] = useState(src)
