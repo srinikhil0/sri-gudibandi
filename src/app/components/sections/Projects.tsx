@@ -23,8 +23,8 @@ const projects: Project[] = [
     tech: ["Next.js", "FastAPI", "Google Gemini AI", "Firebase", "TypeScript", "Python"],
     url: "https://timebridgeai.web.app/",
     image: '/projects/AICalendarAssistant.webp',
-    github: "https://github.com/Future-Website/future-website/tree/main?tab=readme-ov-file",
-    categories: ["Full Stack", "Machine Learning", "Web Development"],
+    github: "https://github.com/srinikhil0/timebridgeai",
+    categories: ["Machine Learning", "Full Stack", "Web Development"],
     titleKey: 'projects.timeBridgeAI',
     descriptionKey: 'projects.timeBridgeAIDescription'
   },
@@ -82,22 +82,23 @@ const CATEGORIES = [
   { key: 'projects.filter.fullstack', value: 'Full Stack' },
   { key: 'projects.filter.web', value: 'Web Development' }
 ]
-const DEFAULT_IMAGE = '/projects/placeholder.jpg'
+const DEFAULT_IMAGE = '/placeholder.jpg'
 
 const ProjectImage = ({ src, alt, priority }: { src: string; alt: string; priority?: boolean }) => {
+  const [imgSrc, setImgSrc] = useState(src)
+
   return (
     <div className="relative h-48 overflow-hidden">
       <Image
-        src={src}
+        src={imgSrc}
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
         priority={priority}
-        onError={(e) => {
-          const target = e.target as HTMLImageElement;
-          if (target.src !== DEFAULT_IMAGE) {
-            target.src = DEFAULT_IMAGE;
+        onError={() => {
+          if (imgSrc !== DEFAULT_IMAGE) {
+            setImgSrc(DEFAULT_IMAGE)
           }
         }}
       />
