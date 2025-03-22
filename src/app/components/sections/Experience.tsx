@@ -1,4 +1,10 @@
+'use client'
+
+import { useLanguage } from '@/app/components/providers/LanguageProvider'
+
 export default function Experience() {
+  const { t } = useLanguage()
+
   const experiences = [
     {
       title: "Course Facilitator",
@@ -43,15 +49,17 @@ export default function Experience() {
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-foreground to-foreground/70 text-transparent bg-clip-text">
-          Experience
+          {t('experience.title')}
         </h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="border-l-2 border-foreground/20 pl-6 relative">
               <div className="absolute w-3 h-3 bg-foreground rounded-full -left-[7px] top-2" />
               <h3 className="text-xl font-semibold">{exp.title}</h3>
-              <p className="text-foreground/60 mb-2">{exp.company} • {exp.period}</p>
-              <p className="mb-3">{exp.description}</p>
+              <p className="text-foreground/60 mb-2">
+                {exp.company} • {exp.period.includes('Present') ? t('experience.present') : exp.period}
+              </p>
+              <p className="mb-3">{t(exp.descriptionKey)}</p>
               <div className="flex flex-wrap gap-2">
                 {exp.technologies.map((tech, i) => (
                   <span key={i} className="px-3 py-1 bg-foreground/5 text-foreground/80 rounded-full text-sm">

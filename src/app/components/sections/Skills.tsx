@@ -1,3 +1,5 @@
+'use client'
+
 import { IconType } from 'react-icons'
 import { 
   SiPython, SiCplusplus, SiMysql, SiJavascript, SiHtml5, 
@@ -9,6 +11,7 @@ import {
   SiZap,
   SiWireshark
 } from 'react-icons/si'
+import { useLanguage } from '@/app/components/providers/LanguageProvider'
 
 interface SkillCategory {
   name: string;
@@ -20,9 +23,11 @@ interface SkillCategory {
 }
 
 export default function Skills() {
+  const { t } = useLanguage()
+  
   const skillCategories: SkillCategory[] = [
     {
-      name: "Languages",
+      name: t('skills.categories.languages'),
       skills: [
         { name: "Python", icon: SiPython, color: "text-yellow-600" },
         { name: "C++", icon: SiCplusplus, color: "text-blue-600" },
@@ -33,7 +38,7 @@ export default function Skills() {
       ]
     },
     {
-      name: "Frameworks & Libraries",
+      name: t('skills.categories.frameworks'),
       skills: [
         { name: "React", icon: SiReact, color: "text-cyan-400" },
         { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
@@ -42,7 +47,7 @@ export default function Skills() {
       ]
     },
     {
-      name: "Databases",
+      name: t('skills.categories.databases'),
       skills: [
         { name: "MySQL", icon: SiMysql, color: "text-blue-500" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
@@ -51,7 +56,7 @@ export default function Skills() {
       ]
     },
     {
-      name: "Tools & Platforms",
+      name: t('skills.categories.tools'),
       skills: [
         { name: "Linux/Unix", icon: SiLinux, color: "text-yellow-500" },
         { name: "Kali Linux", icon: SiKalilinux, color: "text-blue-600" },
@@ -70,7 +75,7 @@ export default function Skills() {
     <section id="skills" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-foreground to-foreground/70 text-transparent bg-clip-text">
-          Skills
+          {t('skills.title')}
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (

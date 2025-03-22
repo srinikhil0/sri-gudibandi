@@ -3,9 +3,12 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import ThemeToggle from './ThemeToggle'
+import LanguageSwitch from './LanguageSwitch'
+import { useLanguage } from '@/app/components/providers/LanguageProvider'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <nav className="fixed w-full bg-background/80 backdrop-blur-sm z-50">
@@ -16,15 +19,14 @@ export default function Navbar() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="hover:text-gray-400 transition">About</Link>
-            <Link href="#skills" className="hover:text-gray-400 transition">Skills</Link>
-            <Link href="#certifications" className="hover:text-gray-400 transition">Certifications</Link>
-            <Link href="#experience" className="hover:text-gray-400 transition">Experience</Link>
-            <Link href="#projects" className="hover:text-gray-400 transition">Projects</Link>
-            <Link href="#education" className="hover:text-gray-400 transition">Education</Link>
-            <Link href="#contact" className="hover:text-gray-400 transition">Contact</Link>
+            <Link href="#about" className="hover:text-gray-400 transition">{t('nav.about')}</Link>
+            <Link href="#skills" className="hover:text-gray-400 transition">{t('nav.skills')}</Link>
+            <Link href="#certifications" className="hover:text-gray-400 transition">{t('nav.certifications')}</Link>
+            <Link href="#experience" className="hover:text-gray-400 transition">{t('nav.experience')}</Link>
+            <Link href="#projects" className="hover:text-gray-400 transition">{t('nav.projects')}</Link>
+            <Link href="#education" className="hover:text-gray-400 transition">{t('nav.education')}</Link>
+            <LanguageSwitch />
             <ThemeToggle />
-
           </div>
 
           <button 
@@ -41,11 +43,13 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background">
-            <Link href="#about" className="block px-3 py-2 hover:text-gray-400 transition">About</Link>
-            <Link href="#experience" className="block px-3 py-2 hover:text-gray-400 transition">Experience</Link>
-            <Link href="#projects" className="block px-3 py-2 hover:text-gray-400 transition">Projects</Link>
-            <Link href="#education" className="block px-3 py-2 hover:text-gray-400 transition">Education</Link>
-            <Link href="#contact" className="block px-3 py-2 hover:text-gray-400 transition">Contact</Link>
+            <Link href="#about" className="block px-3 py-2 hover:text-gray-400 transition">{t('nav.about')}</Link>
+            <Link href="#experience" className="block px-3 py-2 hover:text-gray-400 transition">{t('nav.experience')}</Link>
+            <Link href="#projects" className="block px-3 py-2 hover:text-gray-400 transition">{t('nav.projects')}</Link>
+            <Link href="#education" className="block px-3 py-2 hover:text-gray-400 transition">{t('nav.education')}</Link>
+            <div className="px-3 py-2">
+              <LanguageSwitch />
+            </div>
           </div>
         </div>
       )}

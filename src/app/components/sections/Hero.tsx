@@ -1,7 +1,12 @@
+'use client'
+
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { getImagePath } from '@/utils/imagePath';
+import { useLanguage } from '@/app/components/providers/LanguageProvider'
 
 export default function Hero() {
+  const { t } = useLanguage()
+  
   const socialLinks = [
     {
       name: 'GitHub',
@@ -27,14 +32,13 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            Hi, I&apos;m Sri Gudibandi
+            {t('hero.greeting')}
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-foreground/80">
-            Full Stack Developer and Security Engineer
+            {t('hero.title')}
           </p>
           <p className="text-lg md:text-xl mb-8 text-foreground/60 max-w-3xl mx-auto">
-            Specializing in secure software development, scalable web applications, and automation. 
-            Proven experience in enhancing system performance and delivering robust, user-focused solutions.
+            {t('hero.description')}
           </p>
           
           {/* Social Links */}

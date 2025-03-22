@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/app/components/providers/ThemeProvider'
+import { LanguageProvider } from '@/app/components/providers/LanguageProvider'
 import Footer from './components/sections/Footer'
 import ScrollToTop from './components/ui/ScrollToTop'
 import { getImagePath } from '@/utils/imagePath'
@@ -45,10 +46,12 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider>
-          {children}
-          <ScrollToTop />
+          <LanguageProvider>
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </LanguageProvider>
         </ThemeProvider>
-        <Footer />
       </body>
     </html>
   )
